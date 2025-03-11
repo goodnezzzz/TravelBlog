@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - My Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">MyBlog</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="mode-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+      <input type="text" placeholder="What's your name?" id="name" name="name" required />
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+      <textarea id="message" placeholder="Write your message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <div id="popup" class="hidden">
+    <p>Message sent successfully!</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MyBlog. All rights reserved.</p>
+  </footer>
+</body>
+<script src="index.js"></script>
+</html>

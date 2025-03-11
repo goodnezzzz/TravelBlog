@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #e9e9e9;
+  color: #333;
+}
+
+nav {
+  background: rgb(237, 184, 9);
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#mode-toggle{
+  background-color: transparent;
+  border: none;
+}
+
+.headerContainer{
+  background-image: url(Assets/tibumana-waterfall-bali-island-indonesia.jpg);
+  background-size: 100% 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:80px 0 0 0;
+}
+
+header, .about, .contact, .post {
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+  
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+
+  h2{
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 6px;
+  }
+
+  a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(237, 184, 9);
+  }
+  a:hover{
+    color: rgb(136, 29, 91);
+  }
+  
+  p{
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   line-height: 1.5;
+  }
+  
+  img{
+    width: 280px;
+    height: 200px;
+    border-radius: 8px;
+  }
+}  
+    
+.blog-posts{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+
+  button{
+    background-color: rgb(237, 184, 9) ;
+    color: white;
+  }
+}
+
+input, textarea, button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid grey;
+}
+
+.backToTopContainer{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+#backToTop{
+  width: 70px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 1px rgb(237, 184, 9);
+
+  a{
+    text-decoration: none;
+    color: rgb(237, 184, 9) ;
+
+  }
+}
+
+#about{
+  display: flex;
+  justify-content: center;
+
+  .about{
+    width: 50vw;
+    background-color: #282727;
+    line-height: 1.5;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    margin-top: 100px;
+
+    h1{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.postContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  .post{
+    margin: 40px;
+    width: 50vw;
+    background-color: #282727;
+    line-height: 1.5;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+
+    h1{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(237, 184, 9);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  place-items: center;
+}
+
+#popup button {
+  background: white;
+  color: rgb(237, 184, 9);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+  
+@media (max-width: 768px) {
+    nav .container {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+    .postContainer, .header, #about, .contact{
+      margin-top: 200px;
+    }
+}
+
+  
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: #f4f4f4;
+  }
+  .dark-mode .headerContainer{
+    background-image: url(Assets/2148786133.jpg);
+  }  
+  .dark-mode nav {
+    background: rgb(237, 184, 9);
+  }
+  
+  .dark-mode .blog-posts article {
+    background: #333;
+  }
+  
+  .dark-mode input, .dark-mode textarea, .dark-mode button {
+    background: #444;
+    color: #fff;
+    border: 1px solid #666;
+  }
+
+  #backToTop{
+    
+  }
+  
