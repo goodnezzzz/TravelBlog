@@ -5,8 +5,9 @@
 }
   
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   background: #e9e9e9;
   color: #333;
 }
@@ -48,22 +49,37 @@ nav a {
 }
 
 .headerContainer{
-  background-image: url(Assets/tibumana-waterfall-bali-island-indonesia.jpg);
-  background-size: 100% 100%;
+  background-image: url(Assets/1111.jpg);
+  background-size: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin:80px 0 0 0;
+  
+  header{
+    text-align: center;
+    padding: 50px 100px;
+    color: white;
+  }
 }
 
-header, .about, .contact, .post {
-  text-align: center;
-  padding: 50px 20px;
-  color: #fff;
-  margin-top: 50px;
+.about, .contact {
+  text-align: left;
+  padding:0 10vw ;
+  color: #0a0a0a;
+  margin-top: 100px;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  
+  
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
+
 
   
 article{
@@ -157,45 +173,27 @@ input, textarea, button {
   }
 }
 
-#about{
-  display: flex;
-  justify-content: center;
-
-  .about{
-    width: 50vw;
-    background-color: #282727;
-    line-height: 1.5;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: left;
-    margin-top: 100px;
-
-    h1{
-      text-align: center;
-      margin-bottom: 30px;
-    }
-  }
-}
-
 .postContainer{
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-
-  .post{
-    margin: 40px;
-    width: 50vw;
-    background-color: #282727;
-    line-height: 1.5;
-    border-radius: 15px;
-    padding: 30px;
-    text-align: left;
-
-    h1{
-      text-align: center;
-      margin-bottom: 30px;
-    }
+  margin-top: 100px;
+  text-align: left;
+  padding:0 5vw ;
+  color: #0a0a0a;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  gap: 2rem;
+  
+  
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
   }
+  
+  img{
+    width: 30vw;
+  }
+
 }
 
 #popup {
@@ -240,14 +238,21 @@ footer {
       margin: 10px 0;
     }
     .postContainer, .header, #about, .contact{
-      margin-top: 200px;
+      margin-top: 300px;
+    }
+
+    .postContainer{
+      img{
+        height: 40vh;
+        margin-bottom: 40vh;
+      }
     }
 }
 
   
 /* Dark Mode */
 .dark-mode {
-    background: #121212;
+    background: #303030;
     color: #f4f4f4;
   }
   .dark-mode .headerContainer{
@@ -266,8 +271,14 @@ footer {
     color: #fff;
     border: 1px solid #666;
   }
-
-  #backToTop{
-    
+  .dark-mode .about .contact{
+    h1{
+      color: white;
+    }
+    color: white;
   }
+  .dark-mode .post{
+    color: white;
+  }
+
   
