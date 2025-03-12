@@ -192,7 +192,8 @@ input, textarea, button {
   img{
     width: 20vw;
     height: 20vh;
-    float:inline-end;
+    margin: 5px;
+    float:inline-start;
   }
 
 }
