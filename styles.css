@@ -130,7 +130,6 @@ article{
   margin-top: 30px;
 }
 
-
 form {
   display: flex;
   flex-direction: column;
@@ -174,8 +173,8 @@ input, textarea, button {
 }
 
 .postContainer{
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin-top: 100px;
   text-align: left;
   padding:0 5vw ;
@@ -191,7 +190,9 @@ input, textarea, button {
   }
   
   img{
-    width: 30vw;
+    width: 20vw;
+    height: 20vh;
+    float:inline-end;
   }
 
 }
@@ -241,12 +242,12 @@ footer {
       margin-top: 300px;
     }
 
-    .postContainer{
+    /* .postContainer{
       img{
         height: 40vh;
         margin-bottom: 40vh;
       }
-    }
+    } */
 }
 
   
@@ -272,9 +273,6 @@ footer {
     border: 1px solid #666;
   }
   .dark-mode .about .contact{
-    h1{
-      color: white;
-    }
     color: white;
   }
   .dark-mode .post{
