@@ -167,8 +167,8 @@ input, textarea, button {
   }
   
   img{
-    width: 150px;
-    height: 120px;
+    width: 2rem;
+    height: 1.5rem;
     margin: 5px;
     float:inline-start;
   }
@@ -225,7 +225,11 @@ footer {
     }
 
     .headerContainer{
-      margin-top: 100px;
+      margin-top: 50px;
+
+      .header{
+        line-height: 2rem;
+      }
     }
 
 }
