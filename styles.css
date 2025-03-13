@@ -55,8 +55,11 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin:80px 0 0 0;
-  
+  /* margin:80px 0 0 0; */
+
+  h1, p{
+    font-size: 2rem;
+  }
   header{
     text-align: center;
     padding: 50px 100px;
@@ -225,10 +228,10 @@ footer {
     }
 
     .headerContainer{
-      margin-top: 50px;
+      /* margin-top: 50px; */
 
-      .header{
-        font-size: medium;
+      h1, p{
+        font-size:large ;
       }
     }
 
