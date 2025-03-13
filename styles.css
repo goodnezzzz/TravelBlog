@@ -170,8 +170,8 @@ input, textarea, button {
   }
   
   img{
-    width: 2rem;
-    height: 1.5rem;
+    width: 180px;
+    height:150px;
     margin: 5px;
     float:inline-start;
   }
@@ -231,7 +231,7 @@ footer {
       /* margin-top: 50px; */
 
       h1, p{
-        font-size:large ;
+        font-size:medium ;
       }
     }
 
